@@ -8,5 +8,5 @@
         step = channel * width
         # create QImage from image
         qImg = QImage(image.data, width, height, step, QImage.Format_RGB888)
-        # show image in img_label
+        # show image in img_label 
         self.ui.image_label.setPixmap(QPixmap.fromImage(qImg))
