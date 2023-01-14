@@ -29,7 +29,7 @@ class Ui(QtWidgets.QMainWindow):
         self.topLabelPos = [pos.x(), pos.y(), pos.x()+360, pos.y()+48] 
     def mousePressEvent(self, event):
         self.isMoveApp = False
-        self.oldPos = event.globalPos()
+        self.oldPos = event.globalPos() 
         x, y = self.oldPos.x(), self.oldPos.y()
         if x > self.topLabelPos[0] and x < self.topLabelPos[2]:
             if y > self.topLabelPos[1] and y < self.topLabelPos[3]:
