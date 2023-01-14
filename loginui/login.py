@@ -11,7 +11,7 @@ class Ui(QtWidgets.QMainWindow):
         self.path = os.path.dirname(os.path.abspath(__file__))
         self.ui = uic.loadUi(self.path+'/style/login.ui', self)
         _translate = QCoreApplication.translate
-        self.setWindowTitle(_translate("Form", "PyIG")) 
+        self.setWindowTitle(_translate("Form", "PY LOGİN Style")) 
         self.setWindowFlag(Qt.FramelessWindowHint)
         self.setAttribute(Qt.WA_TranslucentBackground)
         self.ui.pushButton_2.clicked.connect(self.close)
